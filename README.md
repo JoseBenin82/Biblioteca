@@ -3,6 +3,8 @@
 ![Java](https://img.shields.io/badge/Java-25-blue.svg)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-4.0.8-green.svg)
 ![Maven](https://img.shields.io/badge/Maven-3.9+-red.svg)
+![Curso](https://img.shields.io/badge/Curso-Alura%20Backend-orange.svg)
+![Estado](https://img.shields.io/badge/Estado-Completado-brightgreen.svg)
 
 Aplicación de consola desarrollada en **Java 25** con **Spring Boot 4.0.8** que consume la API pública de **Gutendex** para buscar, listar y analizar estadísticas de libros del Proyecto Gutenberg.
 
@@ -10,7 +12,39 @@ Aplicación de consola desarrollada en **Java 25** con **Spring Boot 4.0.8** que
 
 ## 📋 Descripción del Proyecto
 
-Este proyecto forma parte del curso de **Alura Backend** y demuestra el consumo de APIs REST, deserialización JSON con Jackson, y el uso de Streams en Java para procesamiento de datos. La aplicación se conecta a la API de [Gutendex](https://gutendex.com/) (una API REST para el Proyecto Gutenberg) para obtener información de libros de dominio público.
+> **📚 Proyecto educativo desarrollado durante el curso de Alura Backend**
+
+Este repositorio contiene los ejercicios prácticos realizados a lo largo del curso **Alura Backend - Java y Spring Boot**, donde se construye paso a paso una aplicación que consume la API de [Gutendex](https://gutendex.com/) (API REST para el Proyecto Gutenberg).
+
+### 🎯 Objetivos de aprendizaje cubiertos
+
+- ✅ Creación de proyecto Spring Boot con Maven
+- ✅ Consumo de APIs REST con `HttpClient` nativo de Java
+- ✅ Deserialización JSON usando **Jackson** y **Records** de Java
+- ✅ Uso de **Streams API** para filtrado, ordenamiento y estadísticas
+- ✅ Inversión de dependencias e interfaces
+- ✅ Patrón CommandLineRunner para aplicaciones de consola
+- ✅ Manejo de excepciones en llamadas HTTP
+
+### 📦 Módulos del curso implementados
+
+| Módulo | Tema | Archivos principales |
+|--------|------|---------------------|
+| **1** | Setup Spring Boot + Maven | `pom.xml`, `BibliotecaApplication.java` |
+| **2** | Consumo API + HttpClient | `ConsumoAPI.java` |
+| **3** | JSON a Objetos (Jackson) | `ConvierteDatos.java`, `IConvierteDatos.java` |
+| **4** | Records para DTOs | `Datos.java`, `DatosLibros.java`, `DatosAutor.java` |
+| **5** | Streams + Lógica de negocio | `Principal.java` |
+| **6** | Testing básico | `BibliotecaApplicationTests.java` |
+
+### Funcionalidades Principales
+
+1. **📚 Listado de los 10 libros más descargados** - Obtiene los libros ordenados por número de descargas de forma descendente
+2. **🔍 Búsqueda de libros por título** - Permite buscar libros ingresando el nombre (búsqueda parcial, insensible a mayúsculas/minúsculas)
+3. **📊 Estadísticas de descargas** - Calcula y muestra:
+   - Promedio de descargas
+   - Máximo de descargas
+   - Mínimo de descargas
 
 ### Funcionalidades Principales
 
@@ -236,9 +270,14 @@ Proyecto educativo - Sin licencia específica. Código libre para fines de apren
 
 ---
 
-## 👨‍💻 Autor
+## 👨‍💻 Autor y Contexto
 
-Desarrollado como parte del programa **Alura Backend** - Formación en Java y Spring Boot.
+**Desarrollado por:** JoseBenin82  
+**Curso:** [Alura Backend - Java y Spring Boot](https://cursos.alura.com.br/)  
+**Tipo:** Proyecto educativo - Ejercicios prácticos del curso  
+**Progreso:** ✅ Módulos 1-6 completados
+
+> Este repositorio refleja el aprendizaje progresivo a lo largo del curso. Cada commit representa un paso en la construcción de la aplicación, desde la configuración inicial hasta la implementación completa con Streams y testing.
 
 ---
 
